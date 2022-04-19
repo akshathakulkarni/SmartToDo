@@ -1,12 +1,6 @@
 import React from 'react';
-import './App.css';
+import ReactDOM from 'react-dom';
+import App from './App.js';
 
-const App = () => {
-  return (
-    <div className='container'>
-      SmartTodo
-    </div>
-  );
-};
+ReactDOM.render(<App />, document.getElementById("root"));
 
-export default App;

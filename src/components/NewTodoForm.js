@@ -6,10 +6,8 @@ import { createTodo } from "./actions";
 //function, NewTodoForm will get todos as a prop automatically
 const NewTodoForm = ({ todos, onCreatePressed }) => {
   const [newTodo, setNewTodo] = useState("");
-
   return (
     <div className="new-todo-form">
-      <form classname="form-control">
         <input
           className="new-todo-input"
           type="text"
@@ -18,7 +16,6 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
           onChange={(event) => setNewTodo(event.target.value)}
         />
         <button
-          type="submit"
           onClick={() => {
             const isDuplicateText = todos.some((todo) => todo.text === newTodo);
             if (!isDuplicateText) {
@@ -29,7 +26,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
         >
           Add Todo
         </button>
-      </form>
+      
     </div>
   );
 };

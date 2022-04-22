@@ -1,5 +1,33 @@
 .container {
-  margin: 1rem;
+  margin: 2rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #222222;
+  background-image: url(https://www.avail.co/wp-content/uploads/2016/11/tenant-screening-checklist-for-landlords.jpg);
+  /* Full height
+    height: 100%;  */
+
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+  
+
+.title-icon{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 40px;
+}
+
+.title-name {
+  display: inline-block;
+  padding-top: 8px;
+  height: 50%;
+}
+
+html { 
+  background: url(https://www.avail.co/wp-content/uploads/2016/11/tenant-screening-checklist-for-landlords.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
